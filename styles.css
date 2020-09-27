@@ -1,0 +1,102 @@
+.container{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    perspective: 1500px;
+    
+    /* position: relative;
+    top: 100px; */
+}
+
+.ball{
+    height: 300px;
+    width: 300px;    
+    position: relative;
+    top: 120px;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-24deg) rotateY(-40deg) rotateZ(0deg);
+    transition: 2s ease-in-out;
+}
+
+.ball:hover{
+    transform: rotateX(40deg) rotateY(215deg) rotateZ(10deg);
+}
+
+.front{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    font-size: 275px;
+    transform: rotateY(0deg) translateZ(150px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+}
+
+.back{    
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    font-size: 275px;
+    transform: rotateY(180deg) translateZ(150px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(50, 200, 205); 
+}
+
+.bottom{    
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    font-size: 275px;
+    transform: rotateX(-90deg) translateZ(150px);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 50, 205);
+}
+
+.left{    
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    font-size: 275px;
+    transform: rotateY(-90deg) translateZ(150px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: coral;
+}
+
+.right{    
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    font-size: 275px;
+    transform: rotateY(90deg) translateZ(150px);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: orange;
+}
+
+.top{    
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    font-size: 275px;
+    transform: rotateX(90deg) translateZ(150px);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: violet;
+}
