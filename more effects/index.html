@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/3148d5cc20.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Circular Menu</title>
+</head>
+<body>
+    <div class="toggle" id="toggle" onclick="menu-expand()">
+        <i class="fas fa-futbol" id="ball"></i>
+        <div id="bg"></div>        
+    </div>
+    <div class="menu" id="menu">
+        <a href="#"><i class="fas fa-futbol"></i></a>
+        <a href="#"><i class="fas fa-futbol"></i></a>
+        <a href="#"><i class="fas fa-futbol"></i></a>
+    </div>
+
+    <script>
+        var i = 0;
+        function expand(){
+            if(i == 0){
+                document.getElementById("menu").style.transform="scale(3)";
+                document.getElementById("bg").style.transform="scale(1)";
+                document.getElementById("ball").style.transform="rotate(72deg)";
+                i = 1;
+            }
+            else{
+                document.getElementById("menu").style.transform="scale(0)";
+                document.getElementById("bg").style.transform="scale(0)";
+                document.getElementById("ball").style.transform="rotate(0deg)";
+                i = 0;
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
